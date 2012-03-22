@@ -1,0 +1,1663 @@
+<!doctype html>
+<!-- John Williams
+	Project: MIU
+	March 15, 2012
+	Week 3
+-->  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	
+	<title>The Flower Shop A-App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on"/>
+	
+	<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-position="fixed" data-theme="e">
+			<h1>The Flower Shop B-App</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview"  data-filter="true" data-inset="true">
+				<li><a href="#daisy">
+					<h3>Daisies</h3>
+					<p>View our selection of daisies.</p>
+				</a></li>
+				
+				<li><a href="#lily">
+					<h3>Lilies</h3>
+					<p>View our selection of lilies.</p>
+				</a></li>
+				
+				<li><a href="#orchid">
+					<h3>Orchids</h3>
+					<p>View our selection of orchids.</p>
+				</a></li>
+				
+				<li><a href="#rose"> 
+					<h3>Roses</h3>
+					<p>View our selection of roses.</p>
+				</a></li>
+				
+				<li><a href="#tulip">
+					<h3>Tulips</h3>
+					<p>View our selection of tulips.</p>
+				</a></li>
+				
+			</ul>
+			<a href="#shopnews" data-role="button">Summer Specials</a> 			
+		</div> 
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="additem.html" data-icon="grid">Order</a></li>
+					<li><a href="index.html" data-icon="delete" class="ui-btn-active">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="daisy" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Daisies</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li>
+					<a href="#daisylist">
+						<img src="images/whitedaisybasket.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>White Daisy Basket</h3>
+						<p>Check out our selection of White Daisy Basket's</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#daisylist2">
+						<img src="images/basketofsunshine.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Basket of Sunshine</h3>
+						<p>Check out our selection of Basket of Sunshine's</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#daisylist3">
+						<img src="images/gerberadaisybouquet.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Gerbera Daisy Bouquet</h3>
+						<p>Check out our selection of Gerbera Daisy Bouquet's</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#daisylist4">
+						<img src="images/lemonadeinapitcher.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Lemonade in a pitcher</h3>
+						<p>View our selection of Lemonade in a pitcher's</p>
+						<span class="ui-li-count">5</span>
+					</a>
+				</li>
+								
+				<li data-role="list-divider">Limited Editions</li>
+				
+				<li>
+					<a href="#limited">
+						<img src="images/elegantwishes.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Elegant Wishes Vase</h3>
+						<p>Check out our selection of Elegant Wishes Vase's</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>																
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="lily" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Lilies</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li>
+					<a href="#lilylist">
+						<img src="images/allwhite.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>All White's</h3>
+						<p>Selection of All White Arrangements</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#lilylist2">
+						<img src="images/stargazer.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Stargazer Lilies</h3>
+						<p>Selection of Stargazer Lilies</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#lilylist3">
+						<img src="images/lilyinpitcher.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Lilies in a Pitcher</h3>
+						<p>Selection of Lilies in a Pitcher</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#lilylist4">
+						<img src="images/pinkperfection.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Pink Perfection Lilies</h3>
+						<p>Selection of Pink Perfection Lilies</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#lilylist5">
+						<img src="images/calla.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Elegance Calla Lilies</h3>
+						<p>Selection of Elegance Calla Lilies</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>				
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="orchid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Orchids</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li>
+					<a href="#orchidlist">
+						<img src="images/exoticbreeze.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Exotic Breeze Orchids</h3>
+						<p>Check out our selection of Exotic Breeze Orchids</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#orchidlist2">
+						<img src="images/magenta.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Magenta Orchids</h3>
+						<p>Check out our selection of Magenta Orchids</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#orchidlist3">
+						<img src="images/lavendermist.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Lavender Mist Orchids</h3>
+						<p>Check out our selection of Lavender Mist Orchids</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#orchidlist4">
+						<img src="images/whitebambooorchid.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>White Orchid Bamboos</h3>
+						<p>Check out our selection of White Orchid Bamboos</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#orchidlist5">
+						<img src="images/bontanicalorchid.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Botanical Orchid Duets</h3>
+						<p>Check out our selection of Botanical Orchid Duets</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>				
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="rose" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Roses</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li>
+					<a href="#roselist">
+						<img src="images/passionpinkroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Passion Pink Roses</h3>
+						<p>Check out our selection of Passion Pink Roses</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#roselist2">
+						<img src="images/longstemroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Red Long Stem Roses</h3>
+						<p>Check out our selection of Red Long Stem Roses</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#roselist3">
+						<img src="images/passionwhiteroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Passion White Roses</h3>
+						<p>Check out our selection of Passion White Roses</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#roselist4">
+						<img src="images/assortedroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Assorted Roses</h3>
+						<p>Check out our selection of Assorted Roses</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#roselist5">
+						<img src="images/passionyellowroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Passion Yellow Roses</h3>
+						<p>Check out our selection of Passion Yellow Roses</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>				
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="tulip" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Tulips</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+				<li>
+					<a href="#tuliplist">
+						<img src="images/timelesstulips.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Timeless Tulips</h3>
+						<p>Check out our selection of Timeless Tulips</p>
+						<span class="ui-li-count">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#tuliplist2">
+						<img src="images/perfectlypinktulips.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Perfectly Pink Tulips</h3>
+						<p>Check out our selection of Perfectly Pink Tulips</p>
+						<span class="ui-li-count">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#tuliplist3">
+						<img src="images/springcountrytulips.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Spring Country Tulips</h3>
+						<p>Check out our selection of Spring Country Tulips</p>
+						<span class="ui-li-count">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#tuliplist4">
+						<img src="images/yellowtulipsinpitcher.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Yellow Tulips in Pitchers</h3>
+						<p>Check out our selection of Yellow Tulips in Pitchers</p>
+						<span class="ui-li-count">6</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#tuliplist5">
+						<img src="images/springorangetulips.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Spring Orange Tulips</h3>
+						<p>Check out our selection of Spring Orange Tulips</p>
+						<span class="ui-li-count">6</span>
+					</a>
+				</li>																				
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>	
+			
+	<div data-role="page" id="limited" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Limited Editions Daisies</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<div data-role="collapsible-set">
+		
+				<div data-role="collapsible" data-collapsed="false" data-content-theme="d">
+					<h3>Stir Lemonade in a Vase</h3>
+					<p>Sunshine yellow daisies in a vase</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
+					<h3>It's all about me</h3>
+					<p>Something to make you feel special</p>
+				</div>	
+				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
+					<h3>Romance of Europe</h3>
+					<p>European styled daisies in a vase</p>
+				</div>	
+				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
+					<h3>Lavender Dreams</h3>
+					<p>Spring lavender assortment in a vase</p>
+				</div>	
+				<div data-role="collapsible" data-collapsed="true" data-content-theme="d">	
+					<h3>It's your day</h3>
+					<p>Send this vase assortment to his or her job</p>
+				</div>
+				
+			</div>	
+			
+		</div>	
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		
+	</div>	
+	
+	<div data-role="page" id="favorite" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>My Favorites</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<p>All of my favorite flowers.</p>
+			<div class="ui-block-a"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a></div><br />
+			<a href="index.html" data-role="button" data-inline="true">X</a>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star" class="ui-btn-active">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>	
+	</div>
+	
+	<div data-role="page" id="search" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Search</h1>
+		</div>
+		
+		<div data-role="content">
+<label for="search-basic" class="ui-hidden-accessible">Search Input:</label>
+<input type="search" name="search" id="searc-basic" value="" />
+		
+			<p>Use this page to search our flowers.</p>
+					
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search" class="ui-btn-active">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>	
+	</div>
+	
+	<div data-role="page" id="GitHub" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>GitHub</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<p>Information on navigating this site.</p>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info" class="ui-btn-active">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>	
+	</div>	
+	
+	<div data-role="page" id="Construction" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<p>Under Construction. Coming Soon!</p>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info" class="ui-btn-active">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>	
+	</div>		
+		
+<!--daisy list-->
+	<div data-role="page" id="daisylist" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>White Daisy Basket</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/whitedaisybasket.jpg" alt="1" width="75" height="75" /></a><br />White Daisy Basket</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="daisylist2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Basket of Sunshine</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/basketofsunshine.jpg" alt="1" width="75" height="75" /></a><br />Basket of Sunshine</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="daisylist3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Gerbera Daisy Bouquet</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/gerberadaisybouquet.jpg" alt="1" width="75" height="75" /></a><br />Gerbera Daisy Bouquet</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="daisylist4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Lemonade in a Pitcher</h1>
+		</div>
+<!--meaningful commit-->		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/lemonadeinapitcher.jpg" alt="1" width="75" height="75" /></a><br />Lemonade<br /> in a <br />Pitcher</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/lemonadeinapitcher.jpg" alt="1" width="75" height="75" /></a><br />Lemonade<br /> in a<br /> Pitcher</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/lemonadeinapitcher.jpg" alt="1" width="75" height="75" /></a><br />Lemonade<br /> in a<br /> Pitcher</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/lemonadeinapitcher.jpg" alt="1" width="75" height="75" /></a><br />Lemonade<br /> in a <br />Pitcher</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/lemonadeinapitcher.jpg" alt="1" width="75" height="75" /></a><br />Lemonade<br /> in a <br />Pitcher</div>																
+			</div>	
+		</div>
+<!--meaningful commit end-->		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+<!--	<div data-role="page" id="daisylist5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>White Daisy Basket</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><img src="images/whitedaisybasket.jpg" alt="1" width="75" height="75" /><br />White Daisy Basket</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>	-->			
+	
+<!--Lily List-->
+	<div data-role="page" id="lilylist" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>All white lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/allwhite.jpg" alt="1" width="75" height="75" /></a><br />All white lilies</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>	
+	
+	<div data-role="page" id="lilylist2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Stargazer Lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/stargazer.jpg" alt="1" width="75" height="75" /></a><br />Stargazer Lilies</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="lilylist3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Lilies in a Pitcher</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/lilyinpitcher.jpg" alt="1" width="75" height="75" /></a><br />Lilies in a Pitcher</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="lilylist4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Pink Perfection Lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection Lilies</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="lilylist5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Elegance Calla Lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/calla.jpg" alt="1" width="75" height="75" /></a><br />Elegance Calla Lilies</div>
+			</div>	
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>					
+	
+<!--Orchid List-->
+	<div data-role="page" id="orchidlist" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Exotic Breeze</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/exoticbreeze.jpg" alt="1" width="75" height="75" /></a>Exotic Breeze</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="orchidlist2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Magenta</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/magenta.jpg" alt="1" width="75" height="75" /></a>Magenta</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="orchidlist3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Lavender Mist</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/lavendermist.jpg" alt="1" width="75" height="75" /></a>Lavender Mist</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="orchidlist4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>White Bamboo</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/whitebambooorchid.jpg" alt="1" width="75" height="75" /></a>White Bamboo</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="orchidlist5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Botanical Duet</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/bontanicalorchid.jpg" alt="1" width="75" height="75" /></a>Botanical Duet</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>											
+
+<!--Rose List-->
+	<div data-role="page" id="roselist" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Pink Passion</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/passionpinkroses.jpg" alt="1" width="75" height="75" /></a>Pink Passion</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="roselist2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Red Long Stems</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a><br />Red Long<br /> Stems</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="roselist3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Passion White</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/passionwhiteroses.jpg" alt="1" width="75" height="75" /></a>Passion White</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="roselist4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Assorted Roses</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/assortedroses.jpg" alt="1" width="75" height="75" /></a>Assorted Roses</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="roselist5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Passion Yellow</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/passionyellowroses.jpg" alt="1" width="75" height="75" /></a>Passion Yellow</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+						
+<!--Tulip List-->	
+	<div data-role="page" id="tuliplist" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Timeless Tulips</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/timelesstulips.jpg" alt="1" width="75" height="75" /></a>Timeless Tulips</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="tuliplist2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Perfectly Pink Tulips</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/perfectlypinktulips.jpg" alt="1" width="75" height="75" /></a>Perfectly Pink</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="tuliplist3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Spring Country Tulips</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/springcountrytulips.jpg" alt="1" width="75" height="75" /></a>Spring Country</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="tuliplist4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Yellow Tulips in a Pitcher</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/yellowtulipsinpitcher.jpg" alt="1" width="75" height="75" /></a>Yellow Tulips</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="tuliplist5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Spring Orange Tulips</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a>Spring Orange</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>				
+	
+<!--News Feed-->
+	
+	<div data-role="page" id="shopnews" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Summer Specials</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset="true">
+			<li data-role="list-divider">Today's Specials</li>
+				<li>
+					<a href="#news1">
+						<img src="images/whitedaisybasket.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>White Daisy Basket for $29.99</h3>
+						<p>Ends: March 8, 2012 - 12:00 am</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#news2">
+						<img src="images/stargazer.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Stargazer Lilies $15.99</h3>
+						<p>Ends: March 8, 2012 - 12:00 am</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#news3">
+						<img src="images/pinkperfection.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Pink Perfection Lilies $19.99</h3>
+						<p>Ends: March 8, 2012 - 12:00 am</p>
+						<span class="ui-li-count">42</span>
+					</a>
+				</li>
+				<li data-role="list-divider">This Month's Specials</li>
+				<li>
+					<a href="#news4">
+						<img src="images/longstemroses.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Red Long Stems - $11.99 per dz.</h3>
+						<p>Ends: March 31, 2012 - 12:00 am</p>
+						<span class="ui-li-count">5</span>
+					</a>
+				</li>
+				<li>
+					<a href="#news5">
+						<img src="images/springorangetulips.jpg" style="padding: 5px;" width="60px" height="60px" />
+						<h3>Spring Orange Tulips $28.99</h3>
+						<p>Ends: March 31, 2012 - 12:00 am</p>
+						<span class="ui-li-count">0</span>
+					</a>
+				</li>																
+
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="news1" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>White Daisy Basket's</h1>
+		</div>
+						
+		
+		<div data-role="content" data-filter="true">
+			<p>Purchase our one of our White Daisy Basket Special's today!</p>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/whitedaisybasket.jpg" alt="1" width="75" height="75" /></a><br />White Daisy Basket</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="news2" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Stargazer Lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<p>Purchase our one of our Stargazer Lilies Special's today!</p>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/stargazer.jpg" alt="1" width="75" height="75" /></a>Stargazer Lilies</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="news3" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Pink Perfection Lilies</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<p>Purchase our one of our Pink Perfection Lilies Special's today!</p>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-b"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+				<div class="ui-block-c"><a href="#Construction"><img src="images/pinkperfection.jpg" alt="1" width="75" height="75" /></a><br />Pink Perfection</div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="news4" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Red Long Stem Roses</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<p>Purchase our one of our Red Long Stem Roses Special today!</p>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a>Red Long Stem Roses</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a>Red Long Stem Roses</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a>Red Long Stem Roses</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a>Red Long Stem Roses</div>
+				<div class="ui-block-a"><a href="#Construction"><img src="images/longstemroses.jpg" alt="1" width="75" height="75" /></a>Red Long Stem Roses</div>												
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>
+	
+	<div data-role="page" id="news5" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Spring Orange Tulips</h1>
+		</div>
+		
+		<div data-role="content" data-filter="true">
+			<p>Purchase our one of our Spring Orange Tulips Special today!</p>
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><a href="#Construction"><img src="images/springorangetulips.jpg" alt="1" width="75" height="75" /></a><br /><b>Sold Out!</b></div>
+
+			</div>	
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+			
+				<ul>
+				
+					<li><a href="b.html" data-icon="home">Home</a></li>
+					<li><a href="#favorite" data-icon="star">Favorite</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#GitHub" data-icon="info">GitHub</a></li>
+					<li><a href="index.html" data-icon="delete">A-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>									
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+.ui-page {
+	background: transparent url(../images/os-bg.png);
+}
+
+/*To disable truncation for list descriptions */
+.ui-li-desc {
+white-space: normal;
+}
+/*grid commit*/
+#news1 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news1 .ui-grid-b div {
+	text-align: center;
+}
+
+#news2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news2 .ui-grid-b div {
+	text-align: center;
+}
+
+#news3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news3 .ui-grid-b div {
+	text-align: center;
+}
+
+#news4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news4 .ui-grid-b div {
+	text-align: center;
+}
+
+#news5 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news5 .ui-grid-b div {
+	text-align: center;
+}
+/*C-Grid styling*/
+#news4 .ui-grid-c .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#news4 .ui-grid-c div {
+	text-align: center;
+}
+
+/*daisy grid*/
+#daisylist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#daisylist .ui-grid-b div {
+	text-align: center;
+}
+#daisylist2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#daisylist2 .ui-grid-b div {
+	text-align: center;
+}
+#daisylist3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#daisylist3 .ui-grid-b div {
+	text-align: center;
+}
+#daisylist4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#daisylist4 .ui-grid-b div {
+	text-align: center;
+}
+
+/*lily grid*/
+#lilylist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#lilylist .ui-grid-b div {
+	text-align: center;
+}
+
+#lilylist2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#lilylist2 .ui-grid-b div {
+	text-align: center;
+}
+
+#lilylist3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#lilylist3 .ui-grid-b div {
+	text-align: center;
+}
+
+#lilylist4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#lilylist4 .ui-grid-b div {
+	text-align: center;
+}
+
+#lilylist5 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#lilylist5 .ui-grid-b div {
+	text-align: center;
+}
+
+/*orchid grid*/
+#orchidlist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#orchidlist .ui-grid-b div {
+	text-align: center;
+}
+
+#orchidlist2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#orchidlist2 .ui-grid-b div {
+	text-align: center;
+}
+
+#orchidlist3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#orchidlist3 .ui-grid-b div {
+	text-align: center;
+}
+
+#orchidlist4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#orchidlist4 .ui-grid-b div {
+	text-align: center;
+}
+
+#orchidlist5 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#orchidlist5 .ui-grid-b div {
+	text-align: center;
+}
+
+/*rose grid*/
+#roselist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#roselist .ui-grid-b div {
+	text-align: center;
+}
+
+#roselist2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#roselist2 .ui-grid-b div {
+	text-align: center;
+}
+
+#roselist3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#roselist3 .ui-grid-b div {
+	text-align: center;
+}
+
+#roselist4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#roselist4 .ui-grid-b div {
+	text-align: center;
+}
+
+#roselist5 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#roselist5 .ui-grid-b div {
+	text-align: center;
+}
+
+/*tulip grid*/
+#tuliplist .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#tuliplist .ui-grid-b div {
+	text-align: center;
+}
+
+#tuliplist2 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#tuliplist2 .ui-grid-b div {
+	text-align: center;
+}
+
+#tuliplist3 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#tuliplist3 .ui-grid-b div {
+	text-align: center;
+}
+
+#tuliplist4 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#tuliplist4 .ui-grid-b div {
+	text-align: center;
+}
+
+#tuliplist5 .ui-grid-b .ui-bar {
+	margin: 20px;
+	padding: 15px;	
+}
+
+#tuliplist5 .ui-grid-b div {
+	text-align: center;
+}
+
+
+
+
+/*Meaningful edit to stop truncation in header and etc. */
+.ui-header .ui-title, .ui-footer .ui-title {
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*Added error color to make text stand apart (meaningful commit).*/
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: #cc0000;
+}
+
+#myerrorslink {
+	display: none;
+}
+
