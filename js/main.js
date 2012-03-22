@@ -1,6 +1,6 @@
     //John Williams
-    //March 15, 2012
-    //MIU Deliverable 3
+    //March 22, 2012
+    //MIU Deliverable 4
     //The Flower Shop
 
 //alert("JavaScript works!");
